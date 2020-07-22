@@ -13,6 +13,11 @@
 
 </head>
 <body>
+
+    <div class="loader-bg">
+        <div class="loader"></div>
+    </div>
+
     <div class="container">
 
         <div class="logo">LOGO</div>
@@ -22,7 +27,7 @@
                 <ul>
                     <li><a href="#" class="active">home </a><span>.</span></li>
                     <li><a href="menu.html">menu </a><span>.</span></li>
-                    <li><a href="#">place order </a><span>.</span></li>
+                    <li><a href="placeorder.html">place order </a><span>.</span></li>
                     <!-- <li><a href="#">gallery </a><span>.</span></li> -->
                     <!-- <li><a href="#">videos </a><span>.</span></li> -->
                     <li><a href="contact.html">contact us</a></li>
@@ -60,6 +65,13 @@
     </div>
 
     <footer id="main-footer">Copyright &copy; 2020, My Caters</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader-bg').fadeToggle();
+        }, 1500);
+    </script>
 
 </body>
 </html>

@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu | My Caters</title>
     <link rel="stylesheet" href="menu.css">
+    <script src="main.js"></script>
+
 </head>
 <body>
+
+    <div class="loader-bg">
+        <div class="loader"></div>
+    </div>
+
     <div class="container">
 
         <div class="logo">LOGO</div>
@@ -16,7 +23,7 @@
                 <ul>
                     <li><a href="index.html">home </a></li>
                     <li><a href="#" class="active">menu </a></li>
-                    <li><a href="#">place order </a></li>
+                    <li><a href="placeorder.html">place order </a></li>
                     <!-- <li><a href="#">gallery </a><span>.</span></li> -->
                     <!-- <li><a href="#">videos </a><span>.</span></li> -->
                     <li><a href="contact.html">contact us</a></li>
@@ -24,7 +31,8 @@
             </nav>
         </header>
 
-
+    </div>
+    <div>
         <section class="menu">
             <a href="https://source.unsplash.com/random/200x200"><img src="https://source.unsplash.com/random/200x200" alt=""><p>Image 1</p></a>
             <a href="https://source.unsplash.com/random/201x200"><img src="https://source.unsplash.com/random/201x200" alt=""><p>Image 2</p></a>
@@ -43,10 +51,17 @@
             <a href="https://source.unsplash.com/random/214x200"><img src="https://source.unsplash.com/random/214x200" alt=""><p>Image 15</p></a>
             <a href="https://source.unsplash.com/random/215x200"><img src="https://source.unsplash.com/random/215x200" alt=""><p>Image 16</p></a>
         </section>
-
     </div>
 
     <footer id="main-footer">Copyright &copy; 2020, My Caters</footer>
+
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader-bg').fadeToggle();
+        }, 1500);
+    </script>
 
 </body>
 </html>
